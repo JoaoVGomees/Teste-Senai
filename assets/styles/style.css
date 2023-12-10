@@ -1,0 +1,95 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+main
+{
+    display: flex;
+}
+
+.main-left
+{
+    background-color: #FFF;
+    width: 20vw;
+    height: 100vh;
+}
+
+#logo-senai
+{
+    display: block;
+    margin: auto;
+    padding: 10px 0px;
+    width: 60%;
+}
+
+section
+{
+    width: 60%;
+    display: block;
+    margin: auto;
+}
+
+section div
+{
+    margin: 10px 0;
+    padding: 7px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+section div:hover
+{
+    background-color: #D9D9D9;
+}
+
+.main-right
+{
+    margin: 0;
+    width: 80vw;
+    min-height: 100vh;
+    background-color: #D9D9D9;
+    position: relative;
+}
+
+.search
+{
+    background-color: #FFF;
+    padding: 10px 10px;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+}
+
+.table
+{
+    width: 70%;
+    position: absolute;
+    top: 20%;
+}
+
+input
+{
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px)
+{
+    .main-left
+    {
+        background-color: #FFF;
+        width: 45vw;
+    }
+}
