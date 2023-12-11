@@ -1,95 +1,114 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body
-{
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+}
+
+.main-left {
+  background-color: #fff;
+  width: 20vw;
+  height: 100vh;
+}
+
+#logo-senai {
+  display: block;
+  margin: auto;
+  padding: 10px 0px;
+  width: 60%;
+}
+
+.info {
+  width: 60%;
+  display: block;
+  margin: auto;
+}
+
+.info div {
+  margin: 10px 0;
+  padding: 7px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.info div:hover {
+  background-color: #d9d9d9;
+}
+
+.main-right {
+  margin: 0;
+  width: 80vw;
+  min-height: 100vh;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.search {
+  background-color: #fff;
+  margin-top: 2%;
+  margin-right: 2%;
+  padding: 10px 10px;
+  width: 20%;
+  display: block;
+  flex-direction: row;
+}
+
+.search input {
+  width: 80%;
+  padding: 3px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.tabela {
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-}
+  }
 
-main
-{
-    display: flex;
-}
-
-.main-left
-{
-    background-color: #FFF;
+  #logo-senai {
     width: 20vw;
-    height: 100vh;
-}
+    margin-left: 20%;
+  }
 
-#logo-senai
-{
-    display: block;
-    margin: auto;
-    padding: 10px 0px;
-    width: 60%;
-}
+  .main-left .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
-section
-{
-    width: 60%;
-    display: block;
-    margin: auto;
-}
+  .main-right {
+    width: 100vw;
+  }
 
-section div
-{
-    margin: 10px 0;
-    padding: 7px 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-}
+  .search {
+    width: 40%;
+  }
 
-section div:hover
-{
-    background-color: #D9D9D9;
-}
-
-.main-right
-{
-    margin: 0;
+  .tabela {
     width: 80vw;
-    min-height: 100vh;
-    background-color: #D9D9D9;
-    position: relative;
-}
-
-.search
-{
-    background-color: #FFF;
-    padding: 10px 10px;
     position: absolute;
-    top: 3%;
-    right: 3%;
-}
-
-.table
-{
-    width: 70%;
-    position: absolute;
-    top: 20%;
-}
-
-input
-{
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-@media (max-width: 768px)
-{
-    .main-left
-    {
-        background-color: #FFF;
-        width: 45vw;
-    }
+    top: 25%;
+    left: 2%;
+  }
 }
